@@ -24,11 +24,11 @@ makeCacheMatrix <- function(x = matrix()) {
 ## otherwise it creates the inverse by using the solve() function
 
 cacheSolve <- function(x, ...) {
-## Return a matrix that is the inverse of 'x'
-## first check whether the inverse has already been cached
-## and whether the matrix has not been changed
-## the identical() function is used to test whether the input matrix is still the same
-## as the one use to run makeCacheMatrix
+## Return a matrix that is the inverse of 'x'.
+## First check whether the inverse has already been cached
+## and whether the matrix has not been changed.
+## The identical() function is used to test whether the input matrix is still the same
+## as the one used to run makeCacheMatrix
 ##        
         if(exists("inverse")){
                 if(!is.null(inverse) & identical(x, original)) {
